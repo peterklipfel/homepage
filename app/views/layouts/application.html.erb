@@ -10,26 +10,9 @@
     <![endif]-->
 </head>
 <body>
-	<div class="navbar">
-		<div class="navbar-inner">
-			<div class="container">	 
-				<!-- Be sure to leave the brand out there if you want it shown -->
-				<a class="brand" href="#">Peter Klipfel</a>
-				 
-				<!-- Everything you want hidden at 940px or less, place within here -->
-				<div class="nav-collapse">
-					<!-- .nav, .navbar-search, .navbar-form, etc -->
-					<ul class="nav">
-						<li class="active">
-				    	<a href="#">Home</a>
-				    </li>
-				    <li><a href="#">Link</a></li>
-				    <li><a href="#">Link</a></li>
-				  </ul>
-				</div>
-			</div>
-		</div>
-	</div>
+	<% unless no_navbar? %>
+		<%= render 'landing/navbar' %>
+	<% end %>
 	<div class="container">
 		<div class="center-view">
 			<%= yield %>

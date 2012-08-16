@@ -1,5 +1,5 @@
 Homepage::Application.routes.draw do
-  get "landing/home"
+  root to: "landing#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
