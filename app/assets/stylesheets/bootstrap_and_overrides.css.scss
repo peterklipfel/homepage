@@ -34,3 +34,15 @@ html, body {
 .navbar {
 	padding-bottom: 18px;
 }
+
+/* Tabs */
+.nav-tabs {
+	li {
+		padding: 20px 0;
+		font-size: 14pt;
+	}
+}
+.tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover {
+		background: none;
+		border-color: transparent #000 transparent #000;
+}
