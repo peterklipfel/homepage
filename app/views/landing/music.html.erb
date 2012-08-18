@@ -1,0 +1,95 @@
+
+<head>
+<title>360&deg; MP3 player UI demo (SoundManager 2): Javascript + Canvas Visualization, basic example</title>
+<meta name="description" content="Basic example of 360-degree circular control for MP3 links, with EQ and spectrum visualization options" />
+
+	<%= stylesheet_link_tag 'flashblock' %>
+	<%= stylesheet_link_tag '360player' %>
+	<%= stylesheet_link_tag '360player-visualizations' %>
+
+	<%= javascript_include_tag 'berniecode-animator' %>
+	<%= javascript_include_tag 'soundmanager2' %>
+	<%= javascript_include_tag '360player' %>
+
+<!-- special IE-only canvas fix -->
+<!--[if IE]><script type="text/javascript" src="script/excanvas.js"></script><![endif]-->
+
+
+<script type="text/javascript">
+
+soundManager.setup({
+  // path to directory containing SM2 SWF
+  url: 'soundmanager/swf/'
+});
+
+threeSixtyPlayer.config.scaleFont = (navigator.userAgent.match(/msie/i)?false:true);
+threeSixtyPlayer.config.showHMSTime = true;
+
+// enable some spectrum stuffs
+
+threeSixtyPlayer.config.useWaveformData = true;
+threeSixtyPlayer.config.useEQData = true;
+
+// enable this in SM2 as well, as needed
+
+if (threeSixtyPlayer.config.useWaveformData) {
+  soundManager.flash9Options.useWaveformData = true;
+}
+if (threeSixtyPlayer.config.useEQData) {
+  soundManager.flash9Options.useEQData = true;
+}
+if (threeSixtyPlayer.config.usePeakData) {
+  soundManager.flash9Options.usePeakData = true;
+}
+
+if (threeSixtyPlayer.config.useWaveformData || threeSixtyPlayer.flash9Options.useEQData || threeSixtyPlayer.flash9Options.usePeakData) {
+  // even if HTML5 supports MP3, prefer flash so the visualization features can be used.
+  soundManager.preferFlash = true;
+}
+
+// favicon is expensive CPU-wise, but can be enabled.
+threeSixtyPlayer.config.useFavIcon = false;
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="demo.css" />
+<style type="text/css">
+
+#left h2 {
+ padding-top:0px;
+ margin-bottom:0.25em;
+ color:#666;
+}
+
+pre.block {
+ margin-top:0.5em;
+}
+
+/* special case */
+
+#left {
+ width:auto;
+ max-width:100%;
+}
+
+</style>
+
+</head>
+
+<div id="left">
+
+		<!-- here are the MP3 links, which are decorated with the 360 canvas element/UI etc. -->
+
+	 	<h2 style="margin-top:1em">Inline list</h2>
+
+		<div class="sm2-inline-list"> <!-- remove this class to have one item per line -->
+
+			<div class="ui360 ui360-vis"><a href="music/WarOnDrugs.mp3">Song 1</a></div>
+			<div class="ui360 ui360-vis"><a href="music/WarOnDrugs.mp3">Song 2</a></div>
+			<div class="ui360 ui360-vis"><a href="music/WarOnDrugs.mp3">Song 3</a></div>
+
+	    </div>
+
+</div>
+
+

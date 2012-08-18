@@ -1,6 +1,7 @@
 Homepage::Application.routes.draw do
   root to: "landing#front_door"
   match '/home' => 'landing#home', as: 'home'
+  match '/music' => 'landing#music', as: 'music'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
