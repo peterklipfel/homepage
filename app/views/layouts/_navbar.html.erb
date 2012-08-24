@@ -9,10 +9,10 @@
 			<a class="brand" href="#">Peter Klipfel</a>
 			<div class="nav-collapse">
 				<ul class="nav pull-right">
-					<li class="active">
-			    	<%= link_to 'Home', root_path %>
+					<li class="<%= 'active' if request.fullpath == '/home' %>">
+			    	<%= link_to 'Home', home_path %>
 			    </li>
-			    <li>
+			    <li class="<%= 'active' if request.fullpath == '/music' %>">
 			    	<%= link_to 'Music', music_path %>
 			  	</li>
 			  </ul>
