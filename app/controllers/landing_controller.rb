@@ -8,4 +8,7 @@ class LandingController < ApplicationController
 
   def music
   end
+
+  def projects
+  end
 end
