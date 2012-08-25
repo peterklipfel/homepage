@@ -74,11 +74,11 @@ a.thumbnail:hover {
 	-webkit-box-shadow:  3px 4px 8px 3px rgba(6, 5, 6, 0.5);
 	box-shadow:  3px 4px 8px 3px rgba(6, 5, 6, 0.5);
 
-// needs latest Compass, add '@import "compass"' to your scss
-background-color: rgb(244,244,244); // Old browsers
-@include filter-gradient(#f4f4f4, #ffffff, horizontal); // IE6-8 fallback on horizontal gradient
-// IE9 SVG, needs conditional override of 'filter' to 'none'
-$experimental-support-for-svg: true;
-@include background-image(radial-gradient(center, ellipse cover,  rgba(244,244,244,1) 47%,rgba(246,246,246,1) 83%,rgba(255,255,255,1) 100%));
+	// needs latest Compass, add '@import "compass"' to your scss
+	background-color: rgb(244,244,244); // Old browsers
+	@include filter-gradient(#f4f4f4, #ffffff, horizontal); // IE6-8 fallback on horizontal gradient
+	// IE9 SVG, needs conditional override of 'filter' to 'none'
+	$experimental-support-for-svg: true;
+	@include background-image(radial-gradient(center, ellipse cover,  rgba(244,244,244,1) 47%,rgba(246,246,246,1) 83%,rgba(255,255,255,1) 100%));
 
 }
