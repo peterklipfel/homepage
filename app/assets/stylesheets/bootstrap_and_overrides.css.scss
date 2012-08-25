@@ -1,8 +1,12 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
+@import "compass";
 
 /* Background */
 html, body {
+}
+
+.for-gradient {
 	height: 100%;
 	background-image: linear-gradient(bottom, rgb(235,232,228) 13%, rgb(255,254,250) 72%);
 	background-image: -o-linear-gradient(bottom, rgb(235,232,228) 13%, rgb(255,254,250) 72%);
@@ -17,6 +21,7 @@ html, body {
 		color-stop(0.13, rgb(235,232,228)),
 		color-stop(0.72, rgb(255,254,250))
 	);
+
 }
 
 /* Hero Unit */
@@ -45,4 +50,35 @@ html, body {
 .tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover {
 		background: none;
 		border-color: transparent #000 transparent #000;
+}
+
+/* Thumbnails */
+.thumbnail {
+	-webkit-box-shadow:  3px 8px 10px 3px rgba(6, 5, 6, 0.5);
+	box-shadow:  3px 8px 10px 3px rgba(6, 5, 6, 0.5);
+
+	// needs latest Compass, add '@import "compass"' to your scss
+	background-color: rgb(255,255,255); // Old browsers
+	@include filter-gradient(#ffffff, #ededed, horizontal); // IE6-8 fallback on horizontal gradient
+	// IE9 SVG, needs conditional override of 'filter' to 'none'
+	$experimental-support-for-svg: true;
+	@include background-image(radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 58%,rgba(246,246,246,1) 87%,rgba(237,237,237,1) 100%));
+
+
+	&:hover {
+		border: none;
+	}
+}
+
+a.thumbnail:hover {
+	-webkit-box-shadow:  3px 4px 8px 3px rgba(6, 5, 6, 0.5);
+	box-shadow:  3px 4px 8px 3px rgba(6, 5, 6, 0.5);
+
+// needs latest Compass, add '@import "compass"' to your scss
+background-color: rgb(244,244,244); // Old browsers
+@include filter-gradient(#f4f4f4, #ffffff, horizontal); // IE6-8 fallback on horizontal gradient
+// IE9 SVG, needs conditional override of 'filter' to 'none'
+$experimental-support-for-svg: true;
+@include background-image(radial-gradient(center, ellipse cover,  rgba(244,244,244,1) 47%,rgba(246,246,246,1) 83%,rgba(255,255,255,1) 100%));
+
 }

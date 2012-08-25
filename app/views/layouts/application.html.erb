@@ -5,11 +5,13 @@
   <%= render 'layouts/styles_and_scripts' %>
 </head>
 <body>
+<div class="for-gradient">
 	<% unless no_navbar? %>
 		<%= render 'layouts/navbar' %>
 	<% end %>
 	<div class="container-fluid">
 		<%= yield %>
 	</div>
+</div>
 </body>
 </html>
