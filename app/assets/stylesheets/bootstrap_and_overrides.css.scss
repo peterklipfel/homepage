@@ -12,18 +12,22 @@ body {
 
 .hero-unit {
 	background:none;
+	font-family: 'cof', Arial, sans-serif; 
+	color: #54CC45;
 	h1 {
 		margin-left: -50px;
-		font-family: 'cof', Arial, sans-serif; 
 		font-size: 100px;
-		color: #54CC45;
+	}
+	p{
+		text-align: center;
+		font-size: 50px;
 	}
 }
 
 .pointer {
 	position:fixed;
-	bottom: 40px;
-	right: 10px;
+	bottom: 60px;
+	right: 40px;
 	p {
 		margin-left: -350px;
 		margin-bottom: -55px;
