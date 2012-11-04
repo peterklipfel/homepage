@@ -1,0 +1,34 @@
+@font-face {
+  font-family: cof;
+  src: url("/assets/cof.ttf") format("truetype"); /* For IE */
+  src: local("myfont"), url("/assets/cof.ttf") format("truetype"); /* For non-IE */
+}
+
+
+body {
+	background: url("cartographer.png") repeat scroll 0 0 transparent;
+}
+
+
+.hero-unit {
+	background:none;
+	h1 {
+		margin-left: -50px;
+		font-family: 'cof', Arial, sans-serif; 
+		font-size: 100px;
+		color: #54CC45;
+	}
+}
+
+.pointer {
+	position:fixed;
+	bottom: 40px;
+	right: 10px;
+	p {
+		margin-left: -350px;
+		margin-bottom: -55px;
+		font-family: 'cof', Arial, sans-serif; 
+		font-size: 70px;
+		color: #54CC45;
+	}
+}

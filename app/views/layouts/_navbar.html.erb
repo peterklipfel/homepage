@@ -1,0 +1,51 @@
+<div class="navbar navbar-fixed-top navbar-inverse hidden-desktop">
+	<div class="navbar-inner">
+		<div class="container-fluid">	
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="#">Peter Klipfel</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav pull-right">
+				<li class="<%= 'active' if request.fullpath == '/#1' %>">
+				<%= link_to 'Home', '#1' %>
+				</li>
+				<li class="<%= 'active' if request.fullpath == '/#2' %>">
+				<%= link_to 'Music', '#2' %>
+				</li>
+				<li class="<%= 'active' if request.fullpath == '/#3' %>">
+				<%= link_to 'Projects', '#3' %>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="navbar navbar-fixed-bottom navbar-inverse visible-desktop">
+	<div class="navbar-inner">
+		<div class="container-fluid">	
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="#">Peter Klipfel</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav pull-right">
+				<li class="<%= 'active' if request.fullpath == '/#1' %>">
+				<%= link_to 'Home', '#1' %>
+				</li>
+				<li class="<%= 'active' if request.fullpath == '/#2' %>">
+				<%= link_to 'Music', '#2' %>
+				</li>
+				<li class="<%= 'active' if request.fullpath == '/#3' %>">
+				<%= link_to 'Projects', '#3' %>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
