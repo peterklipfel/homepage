@@ -47,8 +47,8 @@
 				<li>
 				<%= link_to 'Music', 'http://soundcloud.com/furioushush/tracks' %>
 				</li>
-				<li class="<%= 'active' if request.fullpath == '/#3' %>">
-				<%= link_to 'Projects', '#3' %>
+				<li class="<%= 'active' if request.fullpath == projects_path %>">
+				<%= link_to 'Projects', projects_path %>
 				</li>
 				<li class="<%= 'active' if request.fullpath == '/#4' %>">
 				<%= link_to 'Blog', '#4' %>

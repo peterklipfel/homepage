@@ -17,10 +17,17 @@ body {
 	h1 {
 		margin-left: -50px;
 		font-size: 100px;
+		@media (max-width: 767px) { 
+			font-size:50px; 
+			text-align: center;
+		}
 	}
-	p{
+	p {
 		text-align: center;
 		font-size: 50px;
+		&.hidden-desktop{
+			font-size: 25px;
+		}
 	}
 }
 
