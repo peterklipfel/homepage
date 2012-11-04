@@ -2,6 +2,7 @@ Homepage::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   resource :landing_pages
+  resource :projects
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
