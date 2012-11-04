@@ -9,11 +9,11 @@
 			<a class="brand" href="#">Peter Klipfel</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav pull-right">
-				<li class="<%= 'active' if request.fullpath == '/#1' %>">
-				<%= link_to 'Home', '#1' %>
+				<li class="<%= 'active' if request.fullpath == root_path %>">
+				<%= link_to 'Home', root_path %>
 				</li>
-				<li class="<%= 'active' if request.fullpath == '/#2' %>">
-				<%= link_to 'Music', '#2' %>
+				<li>
+				<%= link_to 'Music', 'http://soundcloud.com/furioushush/tracks' %>
 				</li>
 				<li class="<%= 'active' if request.fullpath == '/#3' %>">
 				<%= link_to 'Projects', '#3' %>
@@ -41,11 +41,11 @@
 			<a class="brand" href="#">Peter Klipfel</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav pull-right">
-				<li class="<%= 'active' if request.fullpath == '/#1' %>">
-				<%= link_to 'Home', '#1' %>
+				<li class="<%= 'active' if request.fullpath == root_path %>">
+				<%= link_to 'Home', root_path %>
 				</li>
-				<li class="<%= 'active' if request.fullpath == '/#2' %>">
-				<%= link_to 'Music', '#2' %>
+				<li>
+				<%= link_to 'Music', 'http://soundcloud.com/furioushush/tracks' %>
 				</li>
 				<li class="<%= 'active' if request.fullpath == '/#3' %>">
 				<%= link_to 'Projects', '#3' %>
