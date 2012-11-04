@@ -17,9 +17,10 @@ body {
 	h1 {
 		margin-left: -50px;
 		font-size: 100px;
-		@media (max-width: 767px) { 
-			font-size:50px; 
+		@media (max-width: 767px){ 
+			background:none;
 			text-align: center;
+			font-size: 50px; 
 		}
 	}
 	p {
