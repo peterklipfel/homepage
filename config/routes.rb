@@ -1,9 +1,10 @@
 Homepage::Application.routes.draw do
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
-
-  mount Blog::Engine, at: '/blog'
-
+  match 'blog', to: 'posts#index'
+  match 'blog/:id', to: 'posts#show'
+  
   resource :landing_pages
   resource :projects
 

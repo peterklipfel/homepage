@@ -1,9 +1,3 @@
-PATH
-  remote: ./blog
-  specs:
-    blog (0.0.1)
-      rails (~> 3.2.8)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -128,7 +122,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  blog!
   bootstrap-sass (~> 2.1.1.0)
   cloudfoundry-jquery-rails
   coffee-rails (~> 3.2.1)
