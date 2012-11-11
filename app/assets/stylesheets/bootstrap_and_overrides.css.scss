@@ -4,6 +4,10 @@
   src: local("myfont"), url("/assets/cof.ttf") format("truetype"); /* For non-IE */
 }
 
+h1 {
+	font-family: 'cof', Arial, sans-serif; 
+	text-align: center;
+} 
 
 body {
 	background: url("cartographer.png") repeat scroll 0 0 transparent;
