@@ -9,7 +9,6 @@ body {
 	background: url("cartographer.png") repeat scroll 0 0 transparent;
 }
 
-
 .hero-unit {
 	background:none;
 	font-family: 'cof', Arial, sans-serif; 
@@ -42,5 +41,17 @@ body {
 		font-family: 'cof', Arial, sans-serif; 
 		font-size: 70px;
 		color: #54CC45;
+	}
+}
+
+.blog-center {
+	width:650px;
+	background-color: #F6FFD9;
+	height:100%;
+	margin:0 auto;
+	overflow:auto;
+	padding:50px;
+	h1, h2, h3, h4, h5, h6 {
+		text-align: center;
 	}
 }

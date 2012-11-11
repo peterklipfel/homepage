@@ -1,1 +1,7 @@
-<%= render :file => "./posts/#{@post}" %>
+<% content = raw @markdown.render(@content) %>
+<div class="hidden-desktop">
+	<%= content %>
+</div>
+<div class="blog-center visible-desktop">
+	<%= content %>
+</div>

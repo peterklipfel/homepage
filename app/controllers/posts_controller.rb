@@ -15,11 +15,16 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post = params[:id]
+    @content = File.read("#{Rails.root}/posts/#{params[:id]}.md")
+    # @content = ERB.new(preERB).result(binding)
+
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML,autolink: true, 
+                                                                space_after_headers: true, 
+                                                                fenced_code_blocks:true
+                                                                )
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @post }
     end
   end
 
@@ -30,10 +35,6 @@ protected
     entries.delete(".")
     entries.delete("..") 
     entries 
-  end
-
-  def find(name)
-    Dir.entries("./posts")
   end
 
 end
