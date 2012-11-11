@@ -2,9 +2,12 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = find_all
-    @posts.collect! do |post|
-      post.match(/\A[^\.]+/).to_s
+    @posts = find_all.sort.reverse
+    @posts.each do |file_name|
+      file_name.gsub!(/.*?(?=-)/im, "").gsub!("-", "")
+    end
+    @posts.collect! do |date|
+      date.match(/\A[^\.]+/).to_s
     end
 
     respond_to do |format|

@@ -5,7 +5,7 @@
 <br>
 <h3 style="text-align: center;">
 <% @posts.each do |post| %>
-    <%= link_to post, post_link(post) %>
+    <%= link_to post.split("_").each{|word| word.capitalize!}.join(" "), post_link(post) %>
     <br>
 <% end %>
 </h3>
@@ -17,7 +17,7 @@
 <br>
 <h3 style="text-align: center;">
 <% @posts.each do |post| %>
-    <%= link_to post, post_link(post) %>
+    <%= link_to post.split("_").each{|word| word.capitalize!}.join(" "), post_link(post) %>
     <br>
 <% end %>
 </h3>
