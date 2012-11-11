@@ -20,8 +20,7 @@ class PostsController < ApplicationController
 
     @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML,autolink: true, 
                                                                 space_after_headers: true, 
-                                                                fenced_code_blocks:true
-                                                                )
+                                                                fenced_code_blocks:true)
 
     respond_to do |format|
       format.html # show.html.erb

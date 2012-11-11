@@ -1,7 +1,7 @@
 <% content = raw @markdown.render(@content) %>
-<div class="hidden-desktop">
+<div class="visible-phone blog-phone">
 	<%= content %>
 </div>
-<div class="blog-center visible-desktop">
+<div class="blog-center hidden-phone">
 	<%= content %>
 </div>

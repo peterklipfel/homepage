@@ -52,7 +52,25 @@ body {
 	overflow:auto;
 	min-width: 600px;
 	padding:50px;
-	h1, h2, h3, h4, h5, h6 {
+	h1 {
+		font-family: 'cof', Arial, sans-serif; 
+		font-size: 50px; 
+		text-align: center;
+	} 
+	h2, h3, h4, h5, h6 {
+		text-align: center;
+	}
+}
+
+.blog-phone {
+	background-color: #F6FFD9;
+	padding:30px;
+	h1 {
+		font-family: 'cof', Arial, sans-serif; 
+		font-size: 50px; 
+		text-align: center;
+	} 
+	h2, h3, h4, h5, h6 {
 		text-align: center;
 	}
 }
