@@ -4,10 +4,7 @@
 <br>
 <br>
 <h3 style="text-align: center;">
-<% @date_post_name.each do |date_name_tuple| %>
-    <%= link_to date_name_tuple[1].split("_").each{|word| word.capitalize!}.join(" "), post_link(date_name_tuple) %>
-    <br>
-<% end %>
+<%= render partial: 'post_list' %>
 </h3>
 </div>
 <div class="blog-center hidden-phone">
@@ -16,9 +13,6 @@
 <br>
 <br>
 <h3 style="text-align: center;">
-<% @date_post_name.each do |date_name_tuple| %>
-    <%= link_to date_name_tuple[1].split("_").each{|word| word.capitalize!}.join(" "), post_link(date_name_tuple) %>
-    <br>
-<% end %>
+<%= render partial: 'post_list' %>
 </h3>
 </div>
