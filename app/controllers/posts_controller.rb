@@ -2,12 +2,12 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = find_all.sort.reverse
-    @posts.each do |file_name|
-      file_name.gsub!(/.*?(?=-)/im, "").gsub!("-", "")
-    end
-    @posts.collect! do |date|
-      date.match(/\A[^\.]+/).to_s
+    @files = find_all.sort.reverse
+    @date_post_name = []
+    @files.each do |file_name|
+      post_name = file_name.gsub(/.*?(?=-)/im, "").gsub("-", "")
+      date = file_name.match(/[^-]+/).to_s
+      @date_post_name << [date, post_name]
     end
 
     respond_to do |format|
@@ -25,9 +25,6 @@ class PostsController < ApplicationController
                                                                 space_after_headers: true, 
                                                                 fenced_code_blocks:true)
 
-    respond_to do |format|
-      format.html # show.html.erb
-    end
   end
 
 protected
