@@ -4,6 +4,7 @@ Homepage::Application.routes.draw do
   # first created -> highest priority.
   match 'blog', to: 'posts#index'
   match 'blog/:id', to: 'posts#show'
+  match 'resume', to: 'resume#index'
   
   resource :landing_pages
   resource :projects
