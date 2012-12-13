@@ -13,13 +13,15 @@
 <%= render partial: 'layouts/navbar' %>
 
 <div class="container-fluid" style="padding-top:20px;">
-	<% unless (no_center ||= false)%>
+	<% unless (@no_center ||= false)%>
 		<div class="visible-phone blog-phone">
 			<%= yield %>
 		</div>
 		<div class="blog-center hidden-phone">
 			<%= yield %>
 		</div>
+	<% else %>
+		<%= yield %>
 	<% end %>
 </div>
 
