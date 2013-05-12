@@ -65,6 +65,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.5.0)
+    pg (0.15.1)
     polyglot (0.3.3)
     rack (1.4.4)
     rack-cache (1.2)
@@ -130,6 +131,7 @@ DEPENDENCIES
   cloudfoundry-jquery-rails
   coffee-rails (~> 3.2.1)
   compass-rails
+  pg
   rack-google-analytics
   rails (= 3.2.11)
   redcarpet
