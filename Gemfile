@@ -4,7 +4,6 @@ gem 'rails', '3.2.11'
 
 gem 'thin'
 gem 'redcarpet'
-gem 'rack-google-analytics' 
 
 # Gems used only for assets and not required
 # in production environments by default.
