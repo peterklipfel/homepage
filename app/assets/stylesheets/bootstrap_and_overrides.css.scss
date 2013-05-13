@@ -10,7 +10,7 @@ h1 {
 } 
 
 body {
-	background: url("cartographer.png") repeat scroll 0 0 transparent;
+	background-color: #FCF4EB;
 }
 
 .hero-unit {
@@ -77,4 +77,8 @@ body {
 	h2, h3, h4, h5, h6 {
 		text-align: center;
 	}
+}
+
+.navbar{
+	background-color: #842739;
 }
