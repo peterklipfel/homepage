@@ -14,10 +14,7 @@
  -->
 <div class="container-fluid" style="padding-top:20px;">
 	<% unless (@no_center ||= false)%>
-		<div class="visible-phone blog-phone">
-			<%= yield %>
-		</div>
-		<div class="blog-center hidden-phone">
+		<div class="center">
 			<%= yield %>
 		</div>
 	<% else %>

@@ -1,84 +1,11 @@
 @font-face {
-  font-family: cof;
-  src: url("/assets/cof.ttf") format("truetype"); /* For IE */
-  src: local("myfont"), url("/assets/cof.ttf") format("truetype"); /* For non-IE */
+  font-family: gardensC;
+  src: url("/assets/gardensC.otf") format("opentype"); /* For IE */
+  src: local("myfont"), url("/assets/gardensC.otf") format("opentype"); /* For non-IE */
 }
 
 h1 {
-	font-family: 'cof', Arial, sans-serif; 
+	font-family: 'gardensC', Arial, sans-serif; 
 	text-align: center;
 } 
 
-body {
-	background-color: #FCF4EB;
-}
-
-.hero-unit {
-	background:none;
-	font-family: 'cof', Arial, sans-serif; 
-	color: #54CC45;
-	h1 {
-		margin-left: -50px;
-		font-size: 100px;
-		@media (max-width: 980px){ 
-			background:none;
-			text-align: center;
-			font-size: 50px; 
-		}
-	}
-	p {
-		text-align: center;
-		font-size: 50px;
-		@media (max-width: 980px){
-			font-size:30px;
-		}
-	}
-}
-
-.pointer {
-	position:fixed;
-	bottom: 60px;
-	right: 40px;
-	p {
-		margin-left: -350px;
-		margin-bottom: -55px;
-		font-family: 'cof', Arial, sans-serif; 
-		font-size: 70px;
-		color: #54CC45;
-	}
-}
-
-.blog-center {
-	width:50%;
-	background-color: #F6FFD9;
-	height:100%;
-	margin:0 auto;
-	overflow:auto;
-	min-width: 600px;
-	padding:50px;
-	h1 {
-		font-family: 'cof', Arial, sans-serif; 
-		font-size: 50px; 
-		text-align: center;
-	} 
-	h2, h3, h4, h5, h6 {
-		text-align: center;
-	}
-}
-
-.blog-phone {
-	background-color: #F6FFD9;
-	padding:30px;
-	h1 {
-		font-family: 'cof', Arial, sans-serif; 
-		font-size: 50px; 
-		text-align: center;
-	} 
-	h2, h3, h4, h5, h6 {
-		text-align: center;
-	}
-}
-
-.navbar{
-	background-color: #842739;
-}
