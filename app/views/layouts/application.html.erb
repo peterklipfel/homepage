@@ -13,12 +13,13 @@
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  	<title><%= content_for?(:title) ? yield(:title) : "Peter Klipfel" %></title>
+
+    <%= favicon_link_tag 'peterklipfel.png' %>
 
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
-    <%= javascript_include_tag "application" %>
   </head>
 
   <body id="page" class="off-canvas hide-extras">
@@ -27,10 +28,11 @@
         <div class="twelve columns phone-two">
           <nav id="menu" role="navigation" class="hide-for-small">
             <ul id="mainNav" class="nav-bar">
-              <li style="width:25%; text-align: center"><a href=<%= blog_path %>>Blog</a></li>
-              <li style="width:25%; text-align: center"><a href=<%= projects_path %>>Projects</a></li>
-              <li style="width:25%; text-align: center"><a href=<%= resume_path %>>Resume</a></li>
-              <li style="width:25%; text-align: center"><a href="http://soundcloud.com/furioushush">Music</a></li>
+              <li style="width:20%; text-align: center"><a href=<%= root_path %>>Home</a></li>
+              <li style="width:20%; text-align: center"><a href=<%= blog_path %>>Blog</a></li>
+              <li style="width:20%; text-align: center"><a href=<%= projects_path %>>Projects</a></li>
+              <li style="width:20%; text-align: center"><a href=<%= resume_path %>>Resume</a></li>
+              <li style="width:20%; text-align: center"><a href="http://soundcloud.com/furioushush">Music</a></li>
             </ul>
           </nav>
           <p class="show-for-small">
@@ -43,9 +45,9 @@
           <nav id="sideMenu" role="navigation">
             <ul id="sideMainNav" class="nav-bar">
               <li><a href=<%= blog_path %>>Blog</a></li>
-              <li><a href=<%= blog_path %>>Projects</a></li>
-              <li><a href=<%= blog_path %>>Resume</a></li>
-              <li><a href=<%= blog_path %>>Music</a></li>
+              <li><a href=<%= projects_path %>>Projects</a></li>
+              <li><a href=<%= resume_path %>>Resume</a></li>
+              <li><a href="http://soundcloud.com/furioushush">Music</a></li>
             </ul>
           </nav>
         </section>
@@ -60,5 +62,6 @@
         Created By Peter Klipfel
       </div>
     </footer>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>
