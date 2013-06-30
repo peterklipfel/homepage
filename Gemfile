@@ -29,6 +29,4 @@ group :development do
   gem 'rvm-capistrano', '~> 1.3.4'
 end
 
-group :development, :test do
-  gem 'sqlite3'  
-end
+gem 'sqlite3'  
