@@ -23,10 +23,12 @@ end
 #gem 'jquery-rails'
 gem 'cloudfoundry-jquery-rails'
 
-group :development, :test do
-  gem 'sqlite3'  
+group :development do
+  gem 'capistrano', '~> 2.15.4'
+  gem 'capistrano-ext', '~> 1.2.1'
+  gem 'rvm-capistrano', '~> 1.3.4'
 end
 
-group :production do
-  gem 'pg'
+group :development, :test do
+  gem 'sqlite3'  
 end
