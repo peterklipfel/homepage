@@ -28,9 +28,9 @@ group :production do
 end
 
 group :development do
-  gem 'capistrano', '~> 2.15.4'
+  gem 'capistrano', '~> 2.13.4'
   gem 'capistrano-ext', '~> 1.2.1'
-  gem 'rvm-capistrano', '~> 1.3.4'
+  gem 'rvm-capistrano', '~> 1.2.7'
 end
 
 gem 'sqlite3'  
