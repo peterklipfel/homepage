@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '4.0.0'
 
 gem 'thin'
 gem 'redcarpet'
@@ -10,27 +10,27 @@ gem 'redcarpet'
 group :assets do
   gem 'compass-rails'
 
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
-  gem 'zurb-foundation', '~> 4.0.0'
+  gem 'uglifier'
+  gem 'zurb-foundation'
 end
 
-#gem 'jquery-rails'
-gem 'cloudfoundry-jquery-rails'
+gem 'jquery-rails'
+# gem 'cloudfoundry-jquery-rails'
 
 group :production do
   gem "unicorn"
 end
 
 group :development do
-  gem 'capistrano', '~> 2.13.4'
-  gem 'capistrano-ext', '~> 1.2.1'
-  gem 'rvm-capistrano', '~> 1.2.7'
+  gem 'capistrano'
+  gem 'capistrano-ext'
+  gem 'rvm-capistrano'
 end
 
 gem 'sqlite3'  
