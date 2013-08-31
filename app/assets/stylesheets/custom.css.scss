@@ -22,14 +22,27 @@ h1 {
     border: none;
   }
   .style-row-nav-right{
-    width: 8%;
+    width: 4%;
     text-align: center;
     border: none;
+    float:right;
+    font-size:25px;
+    
+    .foundicon-twitter{
+      font-size:25px;
+    }
+    .foundicon-github{
+      font-size:25px;
+    }
+    .foundicon-linkedin{
+      font-size:25px;
+    }
   }
   #mainNav{
     background-color: transparent;
   }
   & a {
+    font-size: 22px;
     -webkit-backface-visibility: hidden;
     background-color: #2ecc71;
     -o-transition:.5s;
