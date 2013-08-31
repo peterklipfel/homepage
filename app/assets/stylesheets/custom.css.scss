@@ -40,13 +40,22 @@ body{
 h1 {
 	font-family: 'gardensC', Arial, sans-serif; 
 	text-align: center;
+  margin-top: 8%;
   &.hero{
     font-size: 100px;
+    color: #bdc3c7;
   }
 }
 
 h2 {
   text-align: center;
+  &.hero{
+    color: #bdc3c7;
+  }
+}
+
+.main-wrap{
+  padding: 0
 }
 
 #header{
@@ -100,13 +109,17 @@ h2 {
   }
 }
 
-.about{
+.computer-me{
   background-color: #c0392b;
   width:100%;
+  & img{
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .who-am-i{
-  // background-color: #e67e22;
+  background-color: #270F03;
   width: 100%
 }
 
