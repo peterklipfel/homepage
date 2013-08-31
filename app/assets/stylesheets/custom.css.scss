@@ -5,7 +5,7 @@
 }
 
 @mixin nav-link-style {
-    & a {
+  & a {
     font-size: 22px;
     -webkit-backface-visibility: hidden;
     background-color: #2ecc71;
@@ -73,6 +73,10 @@ h1 {
   & li{
     border: none;
     @include nav-link-style;
+    & a{
+      font-size: 25px !important;
+      color: #fff;
+    }
   }
 }
 
