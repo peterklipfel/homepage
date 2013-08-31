@@ -4,6 +4,25 @@
   src: local("myfont"), url("/assets/gardensC.otf") format("opentype"); /* For non-IE */
 }
 
+@mixin nav-link-style {
+    & a {
+    font-size: 22px;
+    -webkit-backface-visibility: hidden;
+    background-color: #2ecc71;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+  }
+  & a:hover {
+    -webkit-backface-visibility: hidden;
+    background-color: #27ae60;
+  }
+  & a:active {background-color:transparent;}  /* selected link */
+}
+
 h1 {
 	font-family: 'gardensC', Arial, sans-serif; 
 	text-align: center;
@@ -41,21 +60,19 @@ h1 {
   #mainNav{
     background-color: transparent;
   }
-  & a {
-    font-size: 22px;
-    -webkit-backface-visibility: hidden;
-    background-color: #2ecc71;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    /* ...and now for the proper property */
-    transition:.5s;
+  @include nav-link-style;
+  & p {
+    margin: 0;
   }
-  & a:hover {
-    -webkit-backface-visibility: hidden;
-    background-color: #27ae60;
+  .sidebar-button{
+    border: none;
   }
-  & a:active {background-color:transparent;}  /* selected link */
+
+}
+.nav-bar-side{
+  & li{
+    border: none;
+    @include nav-link-style;
+  }
 }
 
