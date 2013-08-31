@@ -9,3 +9,40 @@ h1 {
 	text-align: center;
 } 
 
+#header{
+  max-width: 100%;
+  min-width: 100%;
+  overflow: visible;
+  #style-nav{
+    background-color: #2ecc71;
+  }
+  .style-row-nav-left{
+    width: 8%;
+    text-align: center;
+    border: none;
+  }
+  .style-row-nav-right{
+    width: 8%;
+    text-align: center;
+    border: none;
+  }
+  #mainNav{
+    background-color: transparent;
+  }
+  & a {
+    -webkit-backface-visibility: hidden;
+    background-color: #2ecc71;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+  }
+  & a:hover {
+    -webkit-backface-visibility: hidden;
+    background-color: #27ae60;
+  }
+  & a:active {background-color:transparent;}  /* selected link */
+}
+

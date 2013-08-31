@@ -24,34 +24,7 @@
 
   <body id="page" class="off-canvas hide-extras">
     <div class="container">
-      <header id="header" class="row">
-        <div class="twelve columns phone-two">
-          <nav id="menu" role="navigation" class="hide-for-small">
-            <ul id="mainNav" class="nav-bar">
-              <li style="width:20%; text-align: center"><a href=<%= root_path %>>Home</a></li>
-              <li style="width:20%; text-align: center"><a href=<%= blog_path %>>Blog</a></li>
-              <li style="width:20%; text-align: center"><a href=<%= projects_path %>>Projects</a></li>
-              <li style="width:20%; text-align: center"><a href=<%= resume_path %>>Resume</a></li>
-              <li style="width:20%; text-align: center"><a href="http://soundcloud.com/furioushush">Music</a></li>
-            </ul>
-          </nav>
-          <p class="show-for-small">
-            <a class='sidebar-button button' id="sidebarButton" href="#sidebar" >Menu</a>
-          </p>
-        </div>
-      </header>
-      <div class="row">
-        <section id="sidebar" role="complementary">
-          <nav id="sideMenu" role="navigation">
-            <ul id="sideMainNav" class="nav-bar">
-              <li><a href=<%= root_path %>>Home</a></li>
-              <li><a href=<%= blog_path %>>Blog</a></li>
-              <li><a href=<%= projects_path %>>Projects</a></li>
-              <li><a href=<%= resume_path %>>Resume</a></li>
-              <li><a href="http://soundcloud.com/furioushush">Music</a></li>
-            </ul>
-          </nav>
-        </section>
+      <%= render partial: 'layouts/header' %>
         <section role="main">
           <%= yield %>
         </section>
