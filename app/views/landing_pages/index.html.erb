@@ -1,11 +1,11 @@
 <div class="who-am-i">
   <div class="row">
-    <div class="twelve columns">
+    <div class="twelve columns hero-wrap">
       <div class="flex-video widescreen">
-          <div style="position:relative;">
-            <h1 class="hero">Peter Klipfel</h1>
-            <h2 class="hero">Computers and Music</h2>
-          </div>
+        <div style="position:relative;">
+          <h1 class="hero">Peter Klipfel</h1>
+          <h2 class="hero">computers and music</h2>
+          <%= image_tag "monitor.png", :class => "hero-img"%>
         </div>
       </div>
     </div>
@@ -14,29 +14,24 @@
 
 <div class="computer-me">
   <div class="row">
-    <div class="four columns">
-      <h1>I build websites</h1>
-    </div>
-    <div class="eight columns">
-      <%= image_tag "cloud.png", :class => "right"%>
-    </div>
-  </div>
-  <div class="row">
-    <div class="eight columns">
-      <%= image_tag "server.png", :class => "left"%>
-    </div>
-    <div class="four columns">
-      <h1>I build servers</h1>
-    </div>
+    <h1>Things I build</h1>
   </div>
   <div class="row">
     <div class="four columns">
-      <h1>I build data apps</h1>
+      <p>websites</p>
+      <%= image_tag "cloud.png"%>
+      <br><br><br><br>
     </div>
-    <div class="eight columns">
-      <%= image_tag "database.png", :class => "right"%>
+     <div class="four columns">
+      <p>servers</p>
+      <%= image_tag "server.png"%>
+      <br><br><br><br>
+    </div>
+     <div class="four columns">
+      <p>data apps</p>
+      <%= image_tag "database.png"%>
+      <br><br><br><br>
     </div>
   </div>
-
 </div>
 
