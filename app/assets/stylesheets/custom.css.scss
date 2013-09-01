@@ -167,4 +167,30 @@ footer {
   height: 80px;
   margin-top: -80px;
   background-color: $brown;
+  & ul {
+    margin: 20px auto;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    & li {
+      margin: 0 30px;
+      display: inline;
+      & a {
+        font-size: 25px;
+        color: #eee;
+        -webkit-backface-visibility: hidden;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        /* ...and now for the proper property */
+        transition:.5s;
+      }
+      & a:hover {
+        -webkit-backface-visibility: hidden;
+        color: #c0392b;
+      }
+      & a:active {background-color:transparent;}  /* selected link */
+    }
+  }
 }
