@@ -147,6 +147,19 @@ h2 {
   }
 }
 
+.map {
+  width: 100%;
+  & .row {
+    width: 100%;
+    height: 300px;
+    overflow: visible;
+    & #map-canvas{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 footer {
   clear: both;
   position: relative;
