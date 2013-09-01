@@ -146,3 +146,12 @@ h2 {
     margin: 60px auto;
   }
 }
+
+footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 80px;
+  margin-top: -80px;
+  background-color: $brown;
+}
