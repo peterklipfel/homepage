@@ -12,7 +12,8 @@ end
 module Homepage
   class Application < Rails::Application
     config.exceptions_app = self.routes
-    config.assets.paths << "#{Rails.root}/vendor/assets/*"
+    config.assets.paths << "#{Rails.root}/vendor/assets/fonts"
+    config.assets.paths << "#{Rails.root}/vendor/assets/stylesheets"
     config.assets.precompile << Proc.new { |path|
       if path =~ /\.(eot|svg|ttf|woff)\z/
         true
