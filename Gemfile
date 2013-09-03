@@ -9,7 +9,7 @@ gem 'redcarpet'
 # in production environments by default.
 group :assets do
   gem 'compass-rails'
-
+  gem "font-awesome-rails"
   gem 'sass-rails'
   gem 'coffee-rails'
 
