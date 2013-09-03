@@ -41,8 +41,17 @@ $light_grey: #f1f6f7;
   src: local("myfont"), url("/assets/gardensC.otf") format("opentype"); /* For non-IE */
 }
 
+html {
+  height: 100%;
+}
+
 body{
   background-color: $light_grey;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
 }
 
 h1 {
@@ -63,7 +72,10 @@ h2 {
 }
 
 .main-wrap{
-  padding: 0
+  padding: 0;
+  overflow: auto;
+  height: 100%;
+  margin-bottom: -160px;
 }
 
 #header{
@@ -169,7 +181,7 @@ footer {
   clear: both;
   position: relative;
   z-index: 10;
-  height: 80px;
+  height: 160px;
   margin-top: -80px;
   background-color: $brown;
   & ul {
