@@ -60,6 +60,9 @@ h1 {
   &.hero{
     margin-top: 0;
     font-size: 100px;
+    @media (max-width: 500px) {
+      font-size:50px;
+    }
     color: $light_grey;
   }
 }
@@ -68,6 +71,9 @@ h2 {
   text-align: center;
   &.hero{
     color: $light_grey;
+    @media (max-width: 500px) {
+      font-size:20px;
+    }
   }
 }
 
@@ -202,6 +208,10 @@ footer {
         -webkit-transition:.5s;
         /* ...and now for the proper property */
         transition:.5s;
+
+        @media (max-width: 500px) {
+          font-size:18px
+        }
       }
       & a:hover {
         -webkit-backface-visibility: hidden;
