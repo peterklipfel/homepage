@@ -25,6 +25,11 @@ $light_grey: #f1f6f7;
     -webkit-backface-visibility: hidden;
     background-color: #27ae60;
   }
+  & .icon:hover {
+    -webkit-backface-visibility: hidden;
+    background-color: $light_green;
+    color: #27ae60;
+  }
   & a:active {background-color:transparent;}  /* selected link */
 }
 
