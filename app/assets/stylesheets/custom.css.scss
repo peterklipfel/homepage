@@ -83,6 +83,9 @@ h2 {
   height: 100%;
   margin-bottom: -80px;
   margin-top: 77px;
+  @media(max-width: 767px){
+    margin-top: 56px;
+  }
 }
 
 #header{
