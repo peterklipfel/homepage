@@ -232,3 +232,23 @@ footer {
   }
 }
 
+.github-repo{
+  background-color: $light_grey;
+  color: #eee;
+  -webkit-backface-visibility: hidden;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+
+  @media (max-width: 500px) {
+    font-size:18px
+  }
+  &:hover {
+    background-color: #bdc3c7;
+    -webkit-backface-visibility: hidden;
+    color: #c0392b;
+  }
+}
