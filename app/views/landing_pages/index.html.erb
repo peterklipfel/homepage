@@ -21,18 +21,35 @@
     <div class="four columns">
       <p>websites</p>
       <%= image_tag "cloud.png"%>
-      <br><br><br><br>
     </div>
      <div class="four columns">
       <p>servers</p>
       <%= image_tag "server.png"%>
-      <br><br><br><br>
     </div>
      <div class="four columns">
       <p>data apps</p>
       <%= image_tag "database.png"%>
-      <br><br><br><br>
     </div>
+  </div>
+</div>
+
+<div class="languages-me">
+  <div class="row">
+    <h1>Languages I speak</h1>
+  </div>
+  <div class="row">
+    <% %w(ruby python java scala).each do |lang| %>
+      <div class="three columns">
+        <%= image_tag "#{lang}.png"%>
+      </div>
+    <% end %>
+  </div>
+  <div class="row">
+    <% %w(html5 css3 js).each do |lang| %>
+      <div class="four columns">
+        <%= image_tag "#{lang}.png"%>
+      </div>
+    <% end %>
   </div>
 </div>
 

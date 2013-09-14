@@ -6,7 +6,6 @@ Homepage::Application.routes.draw do
 
   get 'blog', to: 'posts#index'
   get 'blog/:id', to: 'posts#show'
-  get 'resume', to: 'resume#index'
   get "/404", :to => "errors#not_found"
   get "/500", :to => "errors#internal_error"
 
