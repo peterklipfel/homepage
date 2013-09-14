@@ -161,8 +161,8 @@ h2 {
 
 .computer-me{
   padding-bottom: 10vh;
-  background: url('pk.png') no-repeat fixed;
-  background-image: url('pk.png');
+  background: url(image_path('pk.png')) no-repeat fixed;
+  background-image: url(image_path('pk.png'));
   background-position-x: 94%;
   background-position-y: 15%;
   background-size: initial;
@@ -208,8 +208,8 @@ h2 {
 
 .languages-me{
   padding-bottom: 10vh;
-  background: url('blue.png') no-repeat fixed;
-  background-image: url('blue.png');
+  background: url(image_path('blue.png')) no-repeat fixed;
+  background-image: url(image_path('blue.png'));
   background-position-x: 0;
   background-position-y: 15%;
   background-size: initial;
@@ -233,8 +233,8 @@ h2 {
 
 .tools-me{
   padding-bottom: 10vh;
-  background: url('pk.png') no-repeat fixed;
-  background-image: url('pk.png');
+  background: url(image_path('pk.png')) no-repeat fixed;
+  background-image: url(image_path('pk.png'));
   background-position-x: 96%;
   background-position-y: 15%;
   background-size: initial;
