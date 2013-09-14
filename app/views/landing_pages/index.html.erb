@@ -54,36 +54,38 @@
 </div>
 
 <div class="tools-me">
-  <div class="row">
-    <h1>Tools I Use</h1>
-  </div>
-  <div class="row">
-    <% %w(capistrano juju ubuntu mysql postgres redis).each do |lang| %>
-      <div class="two columns">
-        <%= image_tag "#{lang}.png"%>
-      </div>
-    <% end %>
-  </div>
-   <div class="row">
-    <% %w(sublime cassandra mongo aws kafka zookeeper).each do |lang| %>
-      <div class="two columns">
-        <%= image_tag "#{lang}.png"%>
-      </div>
-    <% end %>
-  </div>
-  <div class="row">
-    <% %w(rails bootstrap coffeescript sass unicorn akka).each do |lang| %>
-      <div class="two columns">
-        <%= image_tag "#{lang}.png"%>
-      </div>
-    <% end %>
-  </div>
-  <div class="row">
-    <% %w(less git webgl play zurb jquery).each do |lang| %>
-      <div class="two columns">
-        <%= image_tag "#{lang}.png"%>
-      </div>
-    <% end %>
+  <div id="layer1">
+    <div class="row">
+      <h1>Tools I Use</h1>
+    </div>
+    <div class="row">
+      <% %w(capistrano juju ubuntu mysql postgres redis).each do |lang| %>
+        <div class="two columns">
+          <%= image_tag "#{lang}.png"%>
+        </div>
+      <% end %>
+    </div>
+     <div class="row">
+      <% %w(sublime cassandra mongo aws kafka zookeeper).each do |lang| %>
+        <div class="two columns">
+          <%= image_tag "#{lang}.png"%>
+        </div>
+      <% end %>
+    </div>
+    <div class="row">
+      <% %w(rails bootstrap coffeescript sass unicorn akka).each do |lang| %>
+        <div class="two columns">
+          <%= image_tag "#{lang}.png"%>
+        </div>
+      <% end %>
+    </div>
+    <div class="row">
+      <% %w(less git webgl play zurb jquery).each do |lang| %>
+        <div class="two columns">
+          <%= image_tag "#{lang}.png"%>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
 

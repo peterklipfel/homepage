@@ -17,3 +17,10 @@ $ ->
       )
     map = undefined
     google.maps.event.addDomListener window, "load", initialize
+
+
+    $(window).scroll ->
+      $(".languages-me").css "background-position-y", ($(window).scrollTop()*80/$(document).height()).toString()+ "%"
+      $(".tools-me").css "background-position-y", ($(window).scrollTop()*80/$(document).height()).toString()+ "%"
+      $(".computer-me").css "background-position-y", ($(window).scrollTop()*80/$(document).height()).toString()+ "%"
+

@@ -160,6 +160,18 @@ h2 {
 }
 
 .computer-me{
+  padding-bottom: 10vh;
+  background: url('pk.png') no-repeat fixed;
+  background-image: url('pk.png');
+  background-position-x: 94%;
+  background-position-y: 15%;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+
   padding-bottom: 40vh;
   background-color: $light_grey;
   width:100%;
@@ -196,7 +208,20 @@ h2 {
 
 .languages-me{
   padding-bottom: 10vh;
+  background: url('blue.png') no-repeat fixed;
+  background-image: url('blue.png');
+  background-position-x: 0;
+  background-position-y: 15%;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
   background-color: #3498db;
+  & .bg {
+    position: absolute;
+  }
   & .row{
     margin-bottom: 30px;
   }
@@ -208,6 +233,17 @@ h2 {
 
 .tools-me{
   padding-bottom: 10vh;
+  background: url('pk.png') no-repeat fixed;
+  background-image: url('pk.png');
+  background-position-x: 96%;
+  background-position-y: 15%;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+
   & .row {
     margin-bottom: 20px;
   }
