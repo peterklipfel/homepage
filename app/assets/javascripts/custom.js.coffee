@@ -21,6 +21,6 @@ $ ->
 
     $(window).scroll ->
       $(".languages-me").css "background-position-y", ($(window).scrollTop()*80/$(document).height()).toString()+ "%"
-      $(".tools-me").css "background-position-y", ($(window).scrollTop()*80/$(document).height()).toString()+ "%"
-      $(".computer-me").css "background-position-y", ($(window).scrollTop()*80/$(document).height()).toString()+ "%"
+      $(".tools-me").css "background-position-y", ($(window).scrollTop()*100/$(document).height()).toString()+ "%"
+      $(".computer-me").css "background-position-y", ($(window).scrollTop()*100/$(document).height()).toString()+ "%"
 
