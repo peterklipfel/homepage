@@ -24,4 +24,3 @@ but it looked way too busy, so I backed off, and left only the spraypaint
 _Cleaned Music Page_
 <br><br><br>
 I am still looking into how I can incorporate my tag somewhere on the page without it looking too busy, but the soundcloud widget includes some images as well.
-<div style="margin-bottom:100px"></div>
