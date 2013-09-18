@@ -18,12 +18,15 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML,
+                                        autolink: true, 
+                                        space_after_headers: true, 
+                                        fenced_code_blocks:true)
     @content = File.read("#{Rails.root}/posts/#{params[:id]}.md")
-    # @content = ERB.new(preERB).result(binding)
+    # erbified = ERB.new(content).result(binding)
+    
+    # @content = raw @markdown.render(erbified)
 
-    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML,autolink: true, 
-                                                                space_after_headers: true, 
-                                                                fenced_code_blocks:true)
   end
 
   def capstone
@@ -50,5 +53,10 @@ protected
     entries.delete("..") 
     entries 
   end
+
+  # def method_missing name, *args
+  #   eval("ActionView::Helpers::AssetTagHelper.#{name}(#{args})")
+  #   super
+  # end
 
 end
