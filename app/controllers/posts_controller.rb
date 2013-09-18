@@ -23,10 +23,6 @@ class PostsController < ApplicationController
                                         space_after_headers: true, 
                                         fenced_code_blocks:true)
     @content = File.read("#{Rails.root}/posts/#{params[:id]}.md")
-    # erbified = ERB.new(content).result(binding)
-    
-    # @content = raw @markdown.render(erbified)
-
   end
 
   def capstone
@@ -53,10 +49,4 @@ protected
     entries.delete("..") 
     entries 
   end
-
-  # def method_missing name, *args
-  #   eval("ActionView::Helpers::AssetTagHelper.#{name}(#{args})")
-  #   super
-  # end
-
 end
