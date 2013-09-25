@@ -5,6 +5,7 @@ gem 'rails', '4.0.0'
 gem 'thin'
 gem 'redcarpet'
 gem 'meta-tags', :require => 'meta_tags'
+gem 'sitemap_generator'
 
 # Gems used only for assets and not required
 # in production environments by default.
