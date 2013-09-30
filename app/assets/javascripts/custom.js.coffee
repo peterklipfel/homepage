@@ -1,6 +1,9 @@
 $ ->
   if $('body').hasClass('landing_pages')
     initialize = ->
+      isGoogleBot = navigator.userAgent.toLowerCase().indexOf('googlebot') > -1
+      if isGoogleBot
+        return; # "Sorry, we have no imagery here" BUG
       myLatlng = new google.maps.LatLng(40.008, 254.730)
       mapOptions =
         zoom: 14
