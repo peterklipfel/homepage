@@ -1,0 +1,3 @@
+# Capstone Reading Assignment 3
+<br><br>
+If there were one word to describe art on the internet, it would be _fleeting_.  Even advanced art projects, are only consumed for a short amount of time before moving on.  Also, the art can be changed at any time.  Interestingly, this is not always true, as archived versions of art pieces often exist.  There is so much self proclaimed art on the internet that it is difficult to find anything worth spending time on.  And when you find art that is worth spending time on, often people don't spend that much time on it because they might be missing the next cool thing.
