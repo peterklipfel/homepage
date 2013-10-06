@@ -16,4 +16,5 @@
 /public/assets
 /vendor/cache
 *.sublime-workspace
+*.sublime-project
 /script/deploy.sh
