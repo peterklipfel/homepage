@@ -648,12 +648,12 @@ function animate() {
 
         for (var i in stars) {
             stars[i].animate(elapsed);
-            stars[i].r = freqByteData[i%128]/1024;
-            stars[i].g = freqByteData[i%256+128]/1024;
-            stars[i].b = freqByteData[i%512+256]/1024;
-            stars[i].twinkleR = freqByteData[i%128]/1024;
-            stars[i].twinkleG = freqByteData[i%256+128]/1024;
-            stars[i].twinkleB = freqByteData[i%512+256]/1024;
+            stars[i].r = freqByteData[i%256]/1024;
+            stars[i].g = freqByteData[i%512+256]/1024;
+            stars[i].b = freqByteData[i%256+768]/1024;
+            stars[i].twinkleR = freqByteData[i%256]/1024;
+            stars[i].twinkleG = freqByteData[i%512+256]/1024;
+            stars[i].twinkleB = freqByteData[i%256+512]/1024;
         }
     }
     lastTime = timeNow;
