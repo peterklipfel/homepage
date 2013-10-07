@@ -16,7 +16,7 @@ module Homepage
     config.assets.paths << "#{Rails.root}/vendor/assets/fonts"
     config.assets.paths << "#{Rails.root}/vendor/assets/stylesheets"
     config.assets.precompile << Proc.new { |path|
-      if path =~ /\.(eot|svg|ttf|woff)\z/
+      if path =~ /\.(eot|svg|ttf|woff|otf)\z/
         true
       end
     }
