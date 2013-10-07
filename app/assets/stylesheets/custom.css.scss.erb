@@ -37,8 +37,8 @@ $light_grey: #f1f6f7;
 
 @font-face {
   font-family: gardensC;
-  src: url("/assets/gardensC.otf") format("opentype"); /* For IE */
-  src: local("myfont"), url("/assets/gardensC.otf") format("opentype"); /* For non-IE */
+  src: url("<%= asset_path('gardensC.otf')%>") format("opentype"); /* For IE */
+  src: local("myfont"), url("<%= asset_path('gardensC.otf')%>") format("opentype"); /* For non-IE */
 }
 
 html {
