@@ -42,6 +42,13 @@ $light_grey: #f1f6f7;
   src: local("myfont"), url("<%= asset_path('gardensC.otf')%>") format("opentype"); /* For non-IE */
 }
 
+@font-face {
+  font-family: mostWasted;
+  src: url("<%= asset_path('mostwasted.ttf')%>") format("truetype"); /* For IE */
+  src: local("myfont"), url("<%= asset_path('mostwasted.ttf')%>") format("truetype"); /* For non-IE */
+}
+
+
 html {
   height: 100%;
 }
@@ -324,4 +331,8 @@ footer {
     -webkit-backface-visibility: hidden;
     color: #000;
   }
+}
+
+h1.music{
+  font-family: mostWasted, Arial, sans-serif;
 }
