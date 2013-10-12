@@ -1,6 +1,6 @@
 Homepage::Application.routes.draw do
   get 'capstone', to: 'posts#capstone'
-
+  get 'music', to: 'landing_pages#music'
   get 'blog', to: 'posts#index'
   get 'blog/:id', to: 'posts#show'
   get "/404", :to => "errors#not_found"
