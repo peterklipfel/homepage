@@ -5,6 +5,6 @@ class LandingPagesController < ApplicationController
 	end
 
   def music
-    
+    @identifier = 'music'
   end
 end
