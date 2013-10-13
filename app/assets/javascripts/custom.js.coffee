@@ -1,5 +1,5 @@
 $ ->
-  if $('body').hasClass('landing_pages')
+  if $('body').hasClass('index')
     initialize = ->
       isGoogleBot = navigator.userAgent.toLowerCase().indexOf('googlebot') > -1
       if isGoogleBot

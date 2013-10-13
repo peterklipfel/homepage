@@ -22,7 +22,7 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body id="page" class="off-canvas hide-extras <%= params[:controller] %> <%= params[:id] %>">
+  <body id="page" class="off-canvas hide-extras <%= params[:controller] %> <%= params[:id] %> <%= @identifier %>">
     <div class="container">
       <%= render partial: 'layouts/header' %>
         <section role="main" class="main-wrap">
