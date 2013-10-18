@@ -23,4 +23,18 @@
   // Fill with gradient
   ctx.fillStyle = back;
   ctx.fillRect(width/2-monitor_width/2, height/3-monitor_height/2, monitor_width, monitor_height);
+
+  var screenWidth = monitor_width*0.93
+  var screenHeight = monitor_height*0.84
+
+  ctx.fillStyle="#f1f7f7";
+  ctx.fillRect(width/2-screenWidth/2, height/3-screenHeight/2, screenWidth, screenHeight);
+  ctx.beginPath();
+  
+  var camDiameter = 10
+
+  ctx.fillStyle="#111";
+  ctx.arc(width/2 - camDiameter/2, height/3-monitor_height/2+camDiameter/2+camDiameter/2, camDiameter/2, 0, Math.PI*2, true); 
+  ctx.closePath();
+  ctx.fill();
 </script>
