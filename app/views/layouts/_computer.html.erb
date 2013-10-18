@@ -1,0 +1,26 @@
+  <canvas id='computer-monitor' style='width:100%; height: 100%'>
+    <%= image_tag "monitor.png", :class => "hero-img"%>
+  </canvas>
+<script type="text/javascript">
+  var canvasId = 'computer-monitor',
+      canvas = document.getElementById(canvasId),
+      div = document.getElementById('monitor-wrapper'),
+      ctx = canvas.getContext('2d'),
+      back;
+  canvas.width = canvas.clientWidth;
+  canvas.height = canvas.clientHeight;
+  var width = canvas.width;
+  var height = canvas.height;
+  var monitor_width = 1.7*width/3
+  var monitor_height= height/2
+  // Create gradient
+  back = ctx.createLinearGradient(monitor_height, monitor_width-(0.04*monitor_width), 0.000, 14.000);
+  
+  // Add colors
+  back.addColorStop(0.336, 'rgba(42, 42, 44, 1.000)');
+  back.addColorStop(0.336, 'rgba(58, 58, 60, 1.000)');
+
+  // Fill with gradient
+  ctx.fillStyle = back;
+  ctx.fillRect(width/2-monitor_width/2, height/3-monitor_height/2, monitor_width, monitor_height);
+</script>

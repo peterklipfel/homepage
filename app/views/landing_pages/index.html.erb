@@ -3,11 +3,11 @@
   <div class="row">
     <div class="twelve columns hero-wrap">
       <div class="flex-video widescreen">
-        <div style="position:relative;">
+        <div style="position:relative;" id='flex-wrapper'>
           <h1 class="hero">Peter Klipfel</h1>
           <h2 class="hero">computers and music</h2>
-          <%= image_tag "monitor.png", :class => "hero-img"%>
         </div>
+        <%= render 'layouts/computer' %>
       </div>
     </div>
   </div>
