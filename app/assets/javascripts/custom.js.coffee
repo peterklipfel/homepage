@@ -48,8 +48,8 @@ $ ->
     height = canvas.height
 
     # MONITOR
-    monitorWidth = 1.7 * width / 3
-    monitorHeight = height / 2
+    monitorWidth = 1.7 * width/3
+    monitorHeight = height/2
 
     # Create gradient
     back = ctx.createLinearGradient(monitorHeight, monitorWidth - (0.04 * monitorWidth), 0.000, 14.000)
@@ -60,32 +60,38 @@ $ ->
 
     # Fill with gradient
     ctx.fillStyle = back
-    roundRect ctx, width / 2 - monitorWidth / 2, height / 3.5 - monitorHeight / 2, monitorWidth, monitorHeight, 20, back
+    roundRect ctx, width/2 - monitorWidth/2, height/3.5 - monitorHeight/2, monitorWidth, monitorHeight, 20, back
     screenWidth = monitorWidth * 0.93
     screenHeight = monitorHeight * 0.84
     $(window).scroll ->
-      console.log "scrolled"
+      ctx.fillStyle = "#f1f7f7"
+      ctx.fillRect width/2 - screenWidth/2, height/3.5 - screenHeight/2, screenWidth, screenHeight
+      for number in [1..256]
+        eqHeight = Math.random()*screenHeight
+        color = '#'+(Math.floor(10*eqHeight%256)).toString(16)+(Math.floor(23*eqHeight%256)).toString(16)+(Math.floor(32*eqHeight%256)).toString(16)
+        ctx.fillStyle = color
+        ctx.fillRect width/2 - screenWidth/2 + number*screenWidth/256, height/3.5 + screenHeight/2 - eqHeight, screenWidth/256, eqHeight
 
     ctx.fillStyle = "#f1f7f7"
-    ctx.fillRect width / 2 - screenWidth / 2, height / 3.5 - screenHeight / 2, screenWidth, screenHeight
+    ctx.fillRect width/2 - screenWidth/2, height/3.5 - screenHeight/2, screenWidth, screenHeight
 
     # CAMERA
     camDiameter = 10
     ctx.beginPath()
     ctx.fillStyle = "#111"
-    ctx.arc width / 2 - camDiameter / 2, height / 3.5 - monitorHeight / 2 + camDiameter / 2 + camDiameter / 2, camDiameter / 2, 0, Math.PI * 2, true
+    ctx.arc width/2 - camDiameter/2, height/3.5 - monitorHeight/2 + camDiameter/2 + camDiameter/2, camDiameter/2, 0, Math.PI * 2, true
     ctx.closePath()
     ctx.fill()
 
     # STAND
-    standHeight = monitorHeight / 6.5
-    standWidth = monitorWidth / 5
+    standHeight = monitorHeight/6.5
+    standWidth = monitorWidth/5
     ctx.fillStyle = "#d1d2d4"
-    ctx.fillRect width / 2 - standWidth / 2, height / 3.5 + monitorHeight / 2, standWidth, standHeight / 3
+    ctx.fillRect width/2 - standWidth/2, height/3.5 + monitorHeight/2, standWidth, standHeight/3
     ctx.fillStyle = "#f3f3f3"
-    ctx.fillRect width / 2 - standWidth / 2, height / 3.5 + monitorHeight / 2 + standHeight / 3, standWidth, 2 * standHeight / 3
+    ctx.fillRect width/2 - standWidth/2, height/3.5 + monitorHeight/2 + standHeight/3, standWidth, 2 * standHeight/3
     ctx.fillStyle = "#e7e8ea"
-    ctx.fillRect width / 2 - standWidth, height / 3.5 + monitorHeight / 2 + standHeight, standWidth * 2, standHeight / 10
+    ctx.fillRect width/2 - standWidth, height/3.5 + monitorHeight/2 + standHeight, standWidth * 2, standHeight/10
 
     $(window).scroll ->
       $(".languages-me").css "background-position-y", ($(window).scrollTop()*80/$(document).height()).toString()+ "%"
