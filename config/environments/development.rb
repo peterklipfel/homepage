@@ -1,6 +1,6 @@
 Homepage::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-  config.serve_static_assets = true
+  config.serve_static_assets = false
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
@@ -8,7 +8,7 @@ Homepage::Application.configure do
   config.cache_classes = false
 
   # Show full error reports and disable caching
-  config.consider_all_requests_local       = false
+  config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
