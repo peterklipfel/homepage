@@ -64,13 +64,14 @@ $ ->
     screenWidth = monitorWidth * 0.93
     screenHeight = monitorHeight * 0.84
     $(window).scroll ->
-      ctx.fillStyle = "#f1f7f7"
-      ctx.fillRect width/2 - screenWidth/2, height/3.5 - screenHeight/2, screenWidth, screenHeight
-      for number in [1..256]
-        eqHeight = Math.random()*screenHeight
-        color = '#'+(Math.floor(10*eqHeight%256)).toString(16)+(Math.floor(23*eqHeight%256)).toString(16)+(Math.floor(32*eqHeight%256)).toString(16)
-        ctx.fillStyle = color
-        ctx.fillRect width/2 - screenWidth/2 + number*screenWidth/256, height/3.5 + screenHeight/2 - eqHeight, screenWidth/256, eqHeight
+      if Math.random() > 0.67
+        ctx.fillStyle = "#f1f7f7"
+        ctx.fillRect width/2 - screenWidth/2, height/3.5 - screenHeight/2, screenWidth, screenHeight
+        for number in [1..256]
+          eqHeight = Math.random()*screenHeight
+          color = '#'+(Math.floor(10*eqHeight/256)).toString(16)+(Math.floor(14*eqHeight/256)).toString(16)+(Math.floor(11*eqHeight/256)).toString(16)
+          ctx.fillStyle = color
+          ctx.fillRect width/2 - screenWidth/2 + number*screenWidth/256, height/3.5 + screenHeight/2 - eqHeight, screenWidth/256, eqHeight
 
     ctx.fillStyle = "#f1f7f7"
     ctx.fillRect width/2 - screenWidth/2, height/3.5 - screenHeight/2, screenWidth, screenHeight
