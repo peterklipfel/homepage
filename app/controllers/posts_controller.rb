@@ -6,8 +6,10 @@ class PostsController < ApplicationController
     @date_post_name = []
     @files.each do |file_name|
       post_name = file_name.gsub(/.*?(?=-)/im, "").gsub("-", "")
-      date = file_name.match(/[^-]+/).to_s
-      @date_post_name << [date, post_name]
+      if not post_name.include? "capstone"
+        date = file_name.match(/[^-]+/).to_s
+        @date_post_name << [date, post_name]
+      end
     end
 
     respond_to do |format|
