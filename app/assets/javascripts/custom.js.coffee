@@ -67,7 +67,7 @@ $ ->
       if Math.random() > 0.67
         ctx.fillStyle = "#f1f7f7"
         ctx.fillRect width/2 - screenWidth/2, height/3.5 - screenHeight/2, screenWidth, screenHeight
-        for number in [1..256]
+        for number in [0..255]
           eqHeight = Math.random()*screenHeight
           color = '#'+(Math.floor(10*eqHeight/256)).toString(16)+(Math.floor(14*eqHeight/256)).toString(16)+(Math.floor(11*eqHeight/256)).toString(16)
           ctx.fillStyle = color
