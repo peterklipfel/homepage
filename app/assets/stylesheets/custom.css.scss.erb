@@ -48,6 +48,8 @@ $light_grey: #f1f6f7;
   src: local("myfont"), url("<%= asset_path('streetwriters.ttf')%>") format("truetype"); /* For non-IE */
 }
 
+@import url(http://fonts.googleapis.com/css?family=Cutive);
+
 
 html {
   height: 100%;
@@ -423,5 +425,32 @@ body.music{
       border: none;
     }
 
+  }
+}
+
+/* ========================
+   BLOG
+   ========================   
+*/
+
+.posts {
+  & h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+  & h2 {
+    margin-bottom: 15px;
+  }
+
+  & p {
+    font-family: "Cutive", serif;
+    font-size: 14px;
+    line-height: 2.3;
+    margin-bottom: 37px;
+    color: #333;
+  }
+
+  .main-wrap {
+    margin-bottom: 10px;
   }
 }
