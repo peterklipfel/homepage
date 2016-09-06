@@ -31,6 +31,12 @@
       <%= image_tag "database.png"%>
     </div>
   </div>
+  <!-- I know, I know, I shouldn't have inline styles. If it bothers you, submit a pull request -->
+  <div class="row" style="margin-top: 80px">
+    <div class="twelve columns">
+      <p style="font-size: 30px">I have built clouds, streaming data applications, web apps, mobile apps, machine learning pipelines, and everything in between.</p>
+    </div>
+  </div>
 </div>
 
 <div class="languages-me">
@@ -38,7 +44,7 @@
     <h1>Languages I Speak</h1>
   </div>
   <div class="row">
-    <% %w(ruby python java scala).each do |lang| %>
+    <% %w(ruby python node scala).each do |lang| %>
       <div class="three columns">
         <%= image_tag "#{lang}.png"%>
       </div>
@@ -59,30 +65,43 @@
       <h1>Tools I Use</h1>
     </div>
     <div class="row">
-      <% %w(capistrano juju ubuntu mysql postgres redis).each do |lang| %>
+      <% %w(ansible juju ubuntu mysql postgres redis).each do |tool| %>
         <div class="two columns">
-          <%= image_tag "#{lang}.png"%>
+          <span data-tooltip aria-haspopup="true" class="has-tip tip-top" title="<%= tool.capitalize %>">
+            <%= image_tag "#{tool}.png"%>
+          </span>
         </div>
       <% end %>
     </div>
      <div class="row">
-      <% %w(sublime cassandra mongo aws kafka zookeeper).each do |lang| %>
+      <div class="two columns">
+        <span data-tooltip aria-haspopup="true" class="has-tip tip-top" title="Elasticsearch">
+          <%= image_tag "elasticsearch.svg"%>
+        </span>
+      </div>
+      <% %w(cassandra mongo aws kafka zookeeper).each do |tool| %>
         <div class="two columns">
-          <%= image_tag "#{lang}.png"%>
+          <span data-tooltip aria-haspopup="true" class="has-tip tip-top" title="<%= tool.capitalize %>">
+            <%= image_tag "#{tool}.png"%>
+          </span>
         </div>
       <% end %>
     </div>
     <div class="row">
-      <% %w(rails bootstrap coffeescript sass unicorn akka).each do |lang| %>
+      <% %w(rails mesos consul docker kubernetes spark).each do |tool| %>
         <div class="two columns">
-          <%= image_tag "#{lang}.png"%>
+          <span data-tooltip aria-haspopup="true" class="has-tip tip-top" title="<%= tool.capitalize %>">
+            <%= image_tag "#{tool}.png"%>
+          </span>
         </div>
       <% end %>
     </div>
     <div class="row">
-      <% %w(less git webgl play zurb jquery).each do |lang| %>
+      <% %w(jenkins git nginx flask openstack vagrant).each do |tool| %>
         <div class="two columns">
-          <%= image_tag "#{lang}.png"%>
+          <span data-tooltip aria-haspopup="true" class="has-tip tip-top" title="<%= tool.capitalize %>">
+            <%= image_tag "#{tool}.png"%>
+          </span>
         </div>
       <% end %>
     </div>

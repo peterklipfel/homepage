@@ -9,7 +9,7 @@ gem 'sitemap_generator'
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem "compass-rails", "~> 2.0.alpha.0"
+gem "compass-rails", "~> 2.0"
 gem "font-awesome-rails"
 gem 'sass-rails'
 gem 'coffee-rails'
@@ -31,7 +31,7 @@ end
 group :development do
   gem 'capistrano'
   gem 'capistrano-ext'
-  gem 'rvm-capistrano'
+  gem 'rvm-capistrano', require: false
 end
 
 gem 'sqlite3'  

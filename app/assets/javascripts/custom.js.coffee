@@ -21,6 +21,8 @@ $ ->
     map = undefined
     google.maps.event.addDomListener window, "load", initialize
 
+    backupimg = $('#hero-computer-img')
+    backupimg.remove()
     roundRect = (ctx, x, y, width, height, radius, fill, stroke) ->
       stroke = true  if typeof stroke is "undefined"
       radius = 5  if typeof radius is "undefined"
@@ -43,9 +45,12 @@ $ ->
     ctx = canvas.getContext("2d")
     back = undefined
     canvas.width = canvas.clientWidth
-    canvas.height = canvas.clientHeight
+    # canvas.height = canvas.clientHeight
+    console.log($(canvas).parent()[0].offsetHeight)
+    canvas.height = $(canvas).parent()[0].offsetHeight
     width = canvas.width
     height = canvas.height
+    console.log(canvas.height)
 
     # MONITOR
     monitorWidth = 1.7 * width/3
@@ -63,15 +68,20 @@ $ ->
     roundRect ctx, width/2 - monitorWidth/2, height/3.5 - monitorHeight/2, monitorWidth, monitorHeight, 20, back
     screenWidth = monitorWidth * 0.93
     screenHeight = monitorHeight * 0.84
+    heights = [0..255]
+    for number in [0..255]
+      heights[number] = Math.random()*screenHeight
     $(window).scroll ->
-      if Math.random() > 0.67
-        ctx.fillStyle = "#f1f7f7"
-        ctx.fillRect width/2 - screenWidth/2, height/3.5 - screenHeight/2, screenWidth, screenHeight
-        for number in [0..255]
-          eqHeight = Math.random()*screenHeight
-          color = '#'+(Math.floor(10*eqHeight/256)).toString(16)+(Math.floor(14*eqHeight/256)).toString(16)+(Math.floor(11*eqHeight/256)).toString(16)
-          ctx.fillStyle = color
-          ctx.fillRect width/2 - screenWidth/2 + number*screenWidth/256, height/3.5 + screenHeight/2 - eqHeight, screenWidth/256, eqHeight
+      ctx.fillStyle = "#f1f7f7"
+      ctx.fillRect width/2 - screenWidth/2, height/3.5 - screenHeight/2, screenWidth, screenHeight
+      for number in [0..255]
+        newHeight = heights[number] + (Math.random()-0.5)*10
+        heights[number] = Math.min(screenHeight, Math.max(0, newHeight))
+        eqHeight = heights[number]
+        # eqHeight = Math.random()*screenHeight
+        color = '#'+(Math.floor(10*eqHeight/256)).toString(16)+(Math.floor(14*eqHeight/256)).toString(16)+(Math.floor(11*eqHeight/256)).toString(16)
+        ctx.fillStyle = color
+        ctx.fillRect width/2 - screenWidth/2 + number*screenWidth/256, height/3.5 + screenHeight/2 - eqHeight, screenWidth/256, eqHeight
 
     ctx.fillStyle = "#f1f7f7"
     ctx.fillRect width/2 - screenWidth/2, height/3.5 - screenHeight/2, screenWidth, screenHeight
@@ -96,8 +106,8 @@ $ ->
 
     $(window).scroll ->
       $(".languages-me").css "background-position-y", ($(window).scrollTop()*80/$(document).height()).toString()+ "%"
-      $(".tools-me").css "background-position-y", ($(window).scrollTop()*100/$(document).height()).toString()+ "%"
-      $(".computer-me").css "background-position-y", ($(window).scrollTop()*100/$(document).height()).toString()+ "%"
+      $(".tools-me").css "background-position-y", ($(window).scrollTop()*120/$(document).height()).toString()+ "%"
+      $(".computer-me").css "background-position-y", ($(window).scrollTop()*120/$(document).height()).toString()+ "%"
 
 
 
