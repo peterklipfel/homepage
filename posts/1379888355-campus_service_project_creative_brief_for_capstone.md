@@ -1,3 +1,0 @@
-# Campus Service Project Creative Brief For Capstone
-
-We will be creating a new website for _Impact the Youth_.  They are an organization that aims to improve the lives of adolescents by pairing them with college student mentors.  We will be creating a single page site, so the technical work will be mostly in creating the markup and styling.  There will likely be a small amount of javascript that will be required for dynamic content.  We are creating a new logo and color scheme.  Because the site will be geared toward the youth members of the organization, college students, and the parents of the youth members, we will be creating a fun, yet professional feeling website.

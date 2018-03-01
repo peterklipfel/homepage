@@ -1,3 +1,0 @@
-# Second Reading Assignment For Capstone
-
-The project that I identified with was [Net Criticism Jukebox](http://www.ljudmila.org/~vuk/nettime/jukebox.htm) partially because the audio aspect is similar to mine, and partially because the project experiments with the way that audio can transfer information on the internet.  The Net Criticism Jukebox for the Beauty and the East Conference pokes fun at the seriousness of the discourse between people on the internet.  The music industry is too focused on preserving royalties that don't pay the artist.  My project experiments with the idea that people will offer their music for free to be suggested based on similar music for the purposes of sharing their art with the world.

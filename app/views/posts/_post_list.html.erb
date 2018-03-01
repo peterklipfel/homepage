@@ -1,9 +1,0 @@
-<% @date_post_name.each do |date_name_tuple| %>
-    <h3>
-      <%= link_to date_name_tuple[1].gsub(".md", "").split("_").each{|word| word.capitalize!}.join(" "), post_link(date_name_tuple) %>
-    </h3>
-    <br>
-    <p><%= format_date date_name_tuple[0] %><p>
-    <br>
-    <br>
-<% end %>
